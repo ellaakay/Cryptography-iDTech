@@ -1,0 +1,17 @@
+
+
+message = uapv{ndj'kt_qtvjc_ndjg_rgneid_psktcijgth}
+
+encrypted = " "
+
+for shift in range (1,26):
+        for letter in message:
+                if (ord(letter) - shift > 97):
+
+                        encrypted += chr(ord(letter)-shift)
+        
+                else:
+                        encrypted += chr(122-97%(ord(letter)-shift))
+
+        encrypted += '\n'
+print encrypted
